@@ -1,2 +1,5 @@
-<p>new</p>
-
+<%= form_for [@restaurant] do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :address %>
+  <%= f.submit "add a restaurant", class: "btn btn-primary" %>
+<% end %>
